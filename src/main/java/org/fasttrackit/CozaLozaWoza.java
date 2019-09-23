@@ -2,8 +2,10 @@ package org.fasttrackit;
 
 public class CozaLozaWoza {
 
-    public static void main(String[] args) {
-        for (int i = 1; i <= 110; i++) {
+
+    public void printCozaLozaWoza (int start, int stop){
+
+        for (int i = start; i <= stop; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println("CozaLoza");
             }
@@ -14,13 +16,23 @@ public class CozaLozaWoza {
             } else if (i % 7 == 0) {
                 System.out.println("Woza ");
             }
-             else  {
+            else  {
                 System.out.println(i + " ");
             }
 
-             if (i % 11 == 0){
-                 System.out.println();
-             }
+            if (i % 11 == 0){
+                System.out.println();
+            }
         }
+
+
+    }
+
+    public static void main(String[] args) {
+
+        CozaLozaWoza cozaLozaWoza = new CozaLozaWoza();
+        cozaLozaWoza.printCozaLozaWoza(1, 110 );
+
+
     }
 }
