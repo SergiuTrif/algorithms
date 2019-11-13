@@ -12,7 +12,6 @@ public class NameAgeAndSalary {
 
         System.out.println("Hi, " + name + " How old are you?");
         int age = keyboard.nextInt();
-
         System.out.println("So you're " + age + ", eh?  That's not old at all!");
         System.out.println("How much do you make, " + name);
         float income = keyboard.nextFloat();
